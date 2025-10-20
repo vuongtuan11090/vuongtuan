@@ -1,11 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tuấn Code</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VTTuan Code</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-    <h1>Vương Thanh Tuấn</h1>
+  <!-- Topbar -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">VTTuan LOGO</div>
+      <button class="nav-toggle" aria-label="Menu">☰</button>
+      <ul class="nav">
+        <li><a href="#gioi-thieu">Giới thiệu</a></li>
+        <li><a href="#tinh-nang">Tính năng</a></li>
+        <li><a href="#du-an">Dự án</a></li>
+        <li><a href="#khach-hang">Khách hàng</a></li>
+        <li><a href="#bai-viet">Bài viết</a></li>
+        <li><a href="#lien-he">Liên hệ</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1>Xin chào, tôi là <span class="accent">Vương Thanh Tuấn!</span></h1>
+        <p>Tôi đang học làm website</p>
+        <ul class="hero-bullets">
+          <li>Tôi sẽ cố gắng học</li>
+          <li>Tôi cần học thêm tiếng anh</li>
+          <li>Tôi sẽ tự tìm trên google</li>
+        </ul>
+        <div class="hero-cta">
+          <a class="btn primary" href="#du-an">Xem dự án</a>
+          <a class="btn" href="#lien-he">Liên hệ</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="https://picsum.photos/seed/profile/480/480" alt="Ảnh đại diện (thay sau)" />
+      </div>
+    </div>
+  </header>
+
+  <!-- Intro block -->
+  <section id="gioi-thieu" class="section intro">
+    <div class="container">
+      <h2 class="section-title">Tôi cần phải làm gì?</h2>
+      <p class="lead">Đây là đoạn giới thiệu tổng quan dài hơn một chút. Bạn có thể nói về kinh nghiệm, lĩnh vực chuyên môn, và triết lý làm việc. Nội dung này chỉ là ví dụ để bạn thay thế sau.</p>
+    </div>
+  </section>
+
+  <!-- Feature rows (image + text) -->
+  <section id="tinh-nang" class="section features">
+    <div class="container feature-row">
+      <img class="feature-img" src="https://picsum.photos/seed/feature1/560/360" alt="Ảnh minh họa 1">
+      <div class="feature-copy">
+        <h3>Điểm nổi bật A</h3>
+        <p>Mô tả ngắn về quy trình hoặc kết quả bạn mang lại.</p>
+      </div>
+    </div>
+    <div class="container feature-row reverse">
+      <div class="feature-copy">
+        <h3>Điểm nổi bật B</h3>
+        <p>Trình bày lợi ích, công nghệ sử dụng hoặc case study tiêu biểu.</p>
+      </div>
+      <img class="feature-img" src="https://picsum.photos/seed/feature2/560/360" alt="Ảnh minh họa 2">
+    </div>
+  </section>
+
+  <!-- Long text / quote / KPI -->
+  <section class="section kpi">
+    <div class="container">
+      <blockquote class="quote">
+        “Một câu trích dẫn hoặc cam kết giá trị của bạn. Có thể thay bằng KPI: 50+ dự án, 10+ năm kinh nghiệm...”
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Cards (3 columns) -->
+  <section id="du-an" class="section cards">
+    <div class="container">
+      <h2 class="section-title">Dự án tôi sẽ làm</h2>
+      <div class="grid-3">
+        <article class="card">
+          <img src="https://picsum.photos/seed/proj1/600/400" alt="Ảnh dự án 1">
+          <h4>Website giới thiệu cá nhân</h4>
+          <p>Mô tả ngắn gọn.</p>
+        </article>
+        <article class="card">
+          <img src="https://picsum.photos/seed/proj2/600/400" alt="Ảnh dự án 2">
+          <h4>Website quán Cafe</h4>
+          <p>Mô tả ngắn gọn.</p>
+        </article>
+        <article class="card">
+          <img src="https://picsum.photos/seed/proj3/600/400" alt="Ảnh dự án 3">
+          <h4>Website Bất động sản</h4>
+          <p>Mô tả ngắn gọn.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Circle avatars / testimonials -->
+  <section id="khach-hang" class="section testimonials">
+    <div class="container">
+      <h2 class="section-title">Mọi người đánh giá về tôi</h2>
+      <div class="grid-3">
+        <div class="testimonial">
+          <img class="avatar" src="https://i.pravatar.cc/160?img=12" alt="Avatar 1">
+          <p>“Dịch vụ tuyệt vời, đúng hẹn.”</p>
+          <div class="stars" aria-label="5 sao">★★★★★</div>
+        </div>
+        <div class="testimonial">
+          <img class="avatar" src="https://i.pravatar.cc/160?img=32" alt="Avatar 2">
+          <p>“Tư duy giải pháp rất tốt.”</p>
+          <div class="stars">★★★★★</div>
+        </div>
+        <div class="testimonial">
+          <img class="avatar" src="https://i.pravatar.cc/160?img=45" alt="Avatar 3">
+          <p>“Hỗ trợ nhanh và chuyên nghiệp.”</p>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA bar -->
+  <section class="section cta">
+    <div class="container cta-inner">
+      <h3>Liên hệ với tôi</h3>
+      <a class="btn primary" href="#lien-he">Gửi lời nhắn</a>
+    </div>
+  </section>
+
+  <!-- Blog / articles cards -->
+  <section id="bai-viet" class="section blog">
+    <div class="container">
+      <h2 class="section-title">Bài viết gần đây</h2>
+      <div class="grid-3">
+        <article class="card blog-card">
+          <img src="https://picsum.photos/seed/blog1/640/420" alt="Blog 1">
+          <h4>Chủ đề 1</h4>
+          <p>Đoạn trích ngắn.</p>
+          <a class="link" href="#" target="_blank" rel="noopener">Đọc thêm</a>
+        </article>
+        <article class="card blog-card">
+          <img src="https://picsum.photos/seed/blog2/640/420" alt="Blog 2">
+          <h4>Chủ đề 2</h4>
+          <p>Đoạn trích ngắn.</p>
+          <a class="link" href="#" target="_blank" rel="noopener">Đọc thêm</a>
+        </article>
+        <article class="card blog-card">
+          <img src="https://picsum.photos/seed/blog3/640/420" alt="Blog 3">
+          <h4>Chủ đề 3</h4>
+          <p>Đoạn trích ngắn.</p>
+          <a class="link" href="#" target="_blank" rel="noopener">Đọc thêm</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer with 4 columns -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h5>Về tôi</h5>
+        <p>Tóm tắt vài dòng về bạn.</p>
+      </div>
+      <div>
+        <h5>Liên kết</h5>
+        <ul class="list">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">GitHub</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Tài nguyên</h5>
+        <ul class="list">
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">CV (PDF)</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div id="lien-he">
+        <h5>Liên hệ</h5>
+        <form class="contact" onsubmit="return false;">
+          <input type="text" placeholder="Họ tên">
+          <input type="email" placeholder="Email">
+          <button class="btn">Gửi (demo)</button>
+        </form>
+      </div>
+    </div>
+    <div class="copyright">
+      © <span id="year"></span> Vương Thanh Tuấn.
+    </div>
+  </footer>
 </body>
 </html>
